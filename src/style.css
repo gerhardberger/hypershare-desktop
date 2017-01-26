@@ -1,0 +1,144 @@
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html, body {
+  background: transparent;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: italic;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: white;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 16px;
+  padding: 3px 0;
+  color: #72f19b;
+}
+
+h4 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0px;
+  font-size: 11px;
+  padding: 5px 0;
+  color: white;
+
+  -webkit-user-select: text;
+}
+
+.header a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 12px 16px;
+  font-size: 13px;
+  text-decoration: none;
+  outline: none;
+
+  transition: .1s ease-out all;
+}
+
+.header a:hover {
+  transform: rotateZ(20deg);
+}
+
+.share-container {
+}
+
+.share-container ul {
+  border-top: 1px solid white;
+  margin: 6px 0;
+  padding: 0;
+}
+
+.share-container h4 {
+  padding: 18px 0 4px;
+  border-top: 1px solid white;
+}
+
+.share-container ul {
+  padding-top: 4px;
+}
+
+.share-container ul li {
+  padding: 8px 8px;
+
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.share-container button {
+  color: #72f19b;
+  padding: 14px 0 16px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.share-container button:hover,
+.share-container button[disabled] {
+  color: rgba(0,0,0,.85);
+  background: #72f19b;
+  border-color: #72f19b;
+}
+
+.download-container input {
+  width: 96%;
+  border: none;
+  background: transparent;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  padding: 14px 8px;
+  outline: none;
+  color: white;
+  letter-spacing: 1px;
+  -webkit-user-select: all;
+}
+
+.download-container button {
+  padding: 14px 0 12px;
+  color: #72f19b;
+  border-top: 1px solid white;
+}
+
+.download-container button:hover,
+.download-container button[disabled] {
+  color: rgba(0,0,0,.85);
+  background: #72f19b;
+  border-color: #72f19b;
+}
+
+.download-container button span {
+  font-style: normal;
+}

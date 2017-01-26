@@ -1,0 +1,19 @@
+{
+  "name": "hypershare-desktop",
+  "version": "1.0.0",
+  "description": "The hypershare app.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "compile": "export npm_config_target=1.4.15 && export npm_config_arch=x64 && export npm_config_target_arch=x64 && export npm_config_disturl=https://atom.io/download/electron && export npm_config_runtime=electron && export npm_config_build_from_source=true && HOME=~/.electron-gyp npm install",
+    "build:macos": "electron-packager . Hypershare --overwrite --asar --electron-version=1.4.15 --out=dist --prune --platform=darwin --arch=x64 --app-bundle-id=com.gerhardberger.hypershare --sign='Developer ID Application: Gellert Hegyi (BT572ZAZCN)' --app-version=$npm_package_version && cd dist/Hypershare-darwin-x64 && zip -ryXq9 ../Hypershare-osx-${npm_package_version}.zip Hypershare.app"
+  },
+  "author": "@gellerthegyi",
+  "license": "MIT",
+  "dependencies": {
+    "hypershare": "^2.0.4",
+    "menubar": "^5.2.0",
+    "preact": "^7.1.0",
+    "register-jsx": "^1.0.1"
+  }
+}
