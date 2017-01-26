@@ -4,7 +4,7 @@ A desktop application for [**hypershare**](https://github.com/gerhardberger/hype
 which is a peer-to-peer file sharing module based on [**hyperdrive**](https://github.com/mafintosh/hyperdrive).
 
 <p align="center">
-  <img align="center" src="./screenshot.png" height=420 />
+  <img align="center" src="./screenshot.png" height=380 />
 </p>
 
 > Currently only available for **macOS**.
